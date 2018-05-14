@@ -1,0 +1,36 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="p">我不是犯人 </h1>
+    <img id ="pic" src="1.jpg" alt="图片"><br>
+    <button onclick="changepic()">点我试试</button>
+    <script>
+     // function init(){
+      //var obj = document.getElementById("p");
+
+      //alert(obj.innerHTML + ",我是一个好人");
+      //obj.innerHTML = "ni是犯人";
+      
+      
+      //}
+      function changepic(){
+        if (document.getElementById("pic").getAttribute("src")=="1.jpg"){
+          document.getElementById("pic").setAttribute("src" ,"2.jpg");
+        
+      }else{
+        document.getElementById("pic").setAttribute("src" ,"1.jpg");
+      }
+      }
+
+
+      window.onload = init;
+    </script>
+    
+  </body>
+  </html>
